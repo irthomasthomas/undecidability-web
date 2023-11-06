@@ -6,9 +6,9 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: Edit _config.yml to set your title!
-description: This is where the description of your site will go. You should change it by editing the _config.yml file. It can be as long as you like! Happy blogging... ❤
-github_username: jph00
+title: undecidability.com - computing blog
+description: A blog about serious computing
+github_username: irthomasthomas
 
 # Email and twitter are optional:
 email:
@@ -27,6 +27,7 @@ plugins:
   - jekyll-gist
   - jekyll-octicons
   - jekyll-github-metadata
+  - jekyll-seo-tag
 
 titles_from_headings:
   enabled:     true
@@ -41,3 +42,12 @@ kramdown:
   auto_ids: true
   hard_wrap: false
   syntax_highlighter: rouge
+
+# Optional features
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Pagination settings
+paginate: 5 # amount of posts to show
+paginate_path: "/page:num/"
